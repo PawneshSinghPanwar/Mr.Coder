@@ -55,13 +55,90 @@
                 </form>
 
                 <div class="mx-2">
-                    <button type="button" class="btn btn-success">Sign In</button>
-                    <button type="button" class="btn btn-danger">Sign Up</button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Sign In</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign Up</button>
                 </div>
 
             </div>
         </div>
     </nav>
+
+    <!-- Login Nav modal  -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login to Mr.Coder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign up Modal  -->
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp to Mr.Coder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- carousel section  -->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -124,7 +201,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-danger-emphasis">Coding</strong>
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">Coding</strong>
                         <h3 class="mb-0">Coding round for global.</h3>
                         <div class="mb-1 text-body-secondary">24 May</div>
                         <p class="card-text mb-auto">Join this coding league quick as well as possible and win the
@@ -145,10 +222,11 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success-emphasis">Mobile Design</strong>
+                        <strong class="d-inline-block mb-2 text-danger-emphasis">Mobile Design</strong>
                         <h3 class="mb-0">Join Mobile design contest.</h3>
                         <div class="mb-1 text-body-secondary">1 july</div>
-                        <p class="mb-auto">Join this mobile disigning contest and win the 1 Lakh dollar as a first prize and more exciting prizes are there.</p>
+                        <p class="mb-auto">Join this mobile disigning contest and win the 1 Lakh dollar as a first prize
+                            and more exciting prizes are there.</p>
                         <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi">
@@ -171,10 +249,9 @@
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-danger-emphasis">Javascript Coding</strong>
-                        <h3 class="mb-0">Coding round for global.</h3>
+                        <h3 class="mb-0">Learn Javascript advanced.</h3>
                         <div class="mb-1 text-body-secondary">24 May</div>
-                        <p class="card-text mb-auto">Join this coding league quick as well as possible and win the
-                            exciting prizes on the contest.</p>
+                        <p class="card-text mb-auto">Learn Javascript core concept in this blog and make awesome project and add in you resume.</p>
                         <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi">
@@ -191,10 +268,10 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success-emphasis">Mobile Design</strong>
-                        <h3 class="mb-0">Join Mobile design contest.</h3>
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Learn Python</strong>
+                        <h3 class="mb-0">Learn Python advanced</h3>
                         <div class="mb-1 text-body-secondary">1 july</div>
-                        <p class="mb-auto">Join this mobile disigning contest and win the 1 Lakh dollar as a first prize and more exciting prizes are there.</p>
+                        <p class="mb-auto">Learn the python advanced core concept and build project also you can learn Machin learning with the help of python.</p>
                         <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi">
@@ -219,7 +296,7 @@
     <footer class="container my-4">
         <p class="float-end"><a href="#">Back to top</a></p>
         <p>© 2023–2024 Mr.Coder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
+    </footer>
 
 
 
